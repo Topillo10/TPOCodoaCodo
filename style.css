@@ -1,0 +1,132 @@
+/*
+- Las etiquetas se indican con el nombre sin prefijo
+- Las clases se indican con el nombre con el prefijo "."
+- Los objetos se indican con el "id" con el prefijo "#"
+
+- 1 rem = 16 px
+
+*/
+
+/*---------------------------------------------------------*/
+/*                           BODY                          */
+/*---------------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+:root {
+    font-size: 16px;
+}
+
+body {
+    background: url("wallpaper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*---------------------------------------------------------*/
+/*                       HEADER (BODY)                     */
+/*---------------------------------------------------------*/
+
+.Titulo {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: xx-large;
+    margin: 0;
+    line-height: 1.428;
+}
+
+/*---------------------------------------------------------*/
+/*                  NAVBAR (HEADER - BODY)                 */
+/*---------------------------------------------------------*/   
+
+.NavBar {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.8);
+    line-height: 1.428;
+}
+  
+li {
+    float: left;
+    padding: 1.0rem;
+}
+
+.Items_NavBar {
+    color: white;
+    text-decoration: none;
+}
+
+.Items_NavBar:hover {
+    color:navajowhite;
+    text-decoration: underline;
+}
+
+.Items_NavBar:active {
+    color: black;
+    text-decoration: none;
+    background-color: navajowhite;
+    font-weight: bold;
+}
+
+/*---------------------------------------------------------*/
+/*--               CUERPO DE LA PAGINA (BODY)              */
+/*---------------------------------------------------------*/
+
+section div {
+    line-height: 1.5rem;
+}
+
+#Formulario_Contacto {
+    width: 45%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 2px;
+}
+
+label {
+    color: white;
+}
+
+/*---------------------------------------------------------*/
+/*                       FOOTER (BODY)                     */
+/*---------------------------------------------------------*/   
+
+.Pie_de_Pagina {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.428;
+}
+
+footer .link{
+    color: white;
+    text-decoration: none;
+    line-height: 1.428;
+}
+
+footer .link:hover{
+    color: navajowhite;
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    margin: 1rem;
+    color: white;
+}
