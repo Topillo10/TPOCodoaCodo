@@ -7,7 +7,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>TIENDA DE CAFÉ</title>
+    
 
 <!---------------------------------------------------------------->
 <!--                  LINKS EXTERNOS (HEAD)                     -->
@@ -15,7 +17,13 @@
 
 <!--ARCHIVO CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_productos.css">
+
+<!--ARCHIVO JS-->
+    <script src="https://kit.fontawesome.com/f56b239c28.js" crossorigin="anonymous"></script>
+    <script src="Library.js"></script>
 </head>
+
 
 <!---------------------------------------------------------------->
 <!--                          BODY                              -->
@@ -27,7 +35,7 @@
 <!--                      HEADER (BODY)                         -->
 <!---------------------------------------------------------------->
     <header>  
-        <h1 class="Titulo">TIENDA DE CAFÉ</h1>
+            <h1 class="Titulo">TIENDA DE CAFÉ</h1>
 
 <!---------------------------------------------------------------->
 <!--                  NAVBAR (HEADER - BODY)                    -->
@@ -49,9 +57,82 @@
 <!--                CUERPO DE LA PAGINA (BODY)                  -->
 <!---------------------------------------------------------------->
     
-<section>
-    <div>A</div>
-</section>
+<main class="Productos">
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Arabica">Arábica</a></h2>
+        <div class="prod_container">
+            <script>                    
+                item("img/Productos/Bolsa de café 2.png",
+                    "Typica",
+                    "Se cultiva en Jamaica, América Central y Asia y es una variedad de alta calidad con acidez limpia y dulce.",
+                    "$2500")
+
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+                
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio") 
+                    
+                
+
+            </script>                
+        </div>
+        <div class="espaciador"></div>                
+
+    </section>
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Robusta">Robusta</a></h2>
+        <div class="prod_container">
+            <script>
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+            </script>                                        
+        </div>
+        <div class="espaciador"></div>                
+            
+    </section>
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Liberica">Libérica</a></h2>
+        <div class="prod_container">
+            <script>
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+                item("img/Productos/",
+                    "Nombre",
+                    "Descripción",
+                    "$precio")  
+
+            </script>            
+        </div>
+        <div class="espaciador"></div> 
+    </section>
+
+</main>
 
 <!---------------------------------------------------------------->
 <!--                     FOOTER (BODY)                          -->
