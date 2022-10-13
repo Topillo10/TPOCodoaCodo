@@ -31,7 +31,7 @@
 <!--                      HEADER (BODY)                         -->
 <!---------------------------------------------------------------->
     <header>  
-        <h1 class="Titulo">TIENDA DE CAFÉ</h1>
+        <img src="Media/Logo.PNG" id="Logo" alt="Logo" style="width:352px">
 
 <!---------------------------------------------------------------->
 <!--                  NAVBAR (HEADER - BODY)                    -->
@@ -54,77 +54,49 @@
 <!---------------------------------------------------------------->
     
 <section>
-    <div id="Formulario_Contacto">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-10">
-                    <div class="table-responsive">
-                        <form action="" method="POST">
-                            <table class="table table-striped" style="color: white; background-color: rgba(0, 0, 0, 0.3);">
-                                <thead>
-                                    <tr>
-                                        <th colspan="2" style="text-align: center;"><h4>CONTACTENOS</h4></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td><label>Apellido</label></td>
-                                        <td><input type="text" id="Apellido" placeholder="Ej: Perez"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>Nombre</label></td>
-                                        <td><input type="text" id="Nombre" placeholder="Ej: Juan"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>Email</label></td>
-                                        <td><input type="email" id="Email" placeholder="hola@email.com"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td><label>Teléfono</label></td>
-                                        <td><input type="number" id="Teléfono" placeholder="1111111111"/></td>
-                                    </tr>
-                                    <tr>
-                                        <td><input type="checkbox" id="CheckMail"/></td>
-                                        <td><label>Enviar una copia a mi E-mail</label></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2"><label>Método de contacto preferido</label><br>                                        
-                                        <input type="radio" id="Contact_Method" value="Teléfono"/>
-                                        <label for="html">Llamada Telefónica</label>
-                                        <input type="radio" id="Contact_Method" value="Email"/>
-                                        <label for="html">Email</label>
-                                        <input type="radio" id="Contact_Method" value="Mensaje_Texto"/>
-                                        <label for="html">Mensaje de Texto</label><br>
-                                        </td>
-                                        
-                                        
-                                        
-                                        <!-- <td><input type="radio" id="html" name="fav_language" value="HTML">
-                                        <label for="html">HTML</label><br>
-                                        <input type="radio" id="css" name="fav_language" value="CSS">
-                                        <label for="css">CSS</label><br>
-                                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                                        <label for="javascript">JavaScript</label></td> -->
-                                    </tr>
-                                    <tr>
-                                        <td><label>Su mensaje</label></td>
-                                        <td><textarea type="Mensaje" id="Mensaje"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2"><button type="submit" class="btn btn-success">CONTACTENOS</button></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </form>
-                    </div>
+    <div id="containerfc">
+        <h2>CONTACTENOS</h2>
+        <div id="Formulario_Contacto">
+            <div class="container">
+                <div class="mb-3">
+                    <label class="form-label" for="floatingName" id="WhiteLabel">NOMBRE</label>
+                    <input type="text" class="form-control" id="floatingName" placeholder="Nombre">
                 </div>
-                <div class="col-md-1"></div>
+                <div class="mb-3">
+                    <label class="form-label" for="floatingLastName" id="WhiteLabel">APELLIDO</label>
+                    <input type="text" class="form-control" id="floatingLastName" placeholder="Apellido">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="floatingemail" id="WhiteLabel">E-MAIL</label>
+                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="floatingInput" id="WhiteLabel">TELÉFONO</label>
+                    <input type="tel" class="form-control" id="floatingTel" placeholder="Teléfono">
+                </div>
+                <div>
+                    <input type="checkbox"/>
+                    <label id="WhiteLabel">Enviar una copia a mi E-mail</label>
+                </div>
+                <div>
+                    <p id="WhiteLabel" style="text-decoration: underline">MÉTODO DE CONTACTO PREFERIDO</p>                                        
+                    <input type="radio" id="Contact_Method" value="Teléfono" name="Contact_Method"/>
+                    <label id="WhiteLabel" for="Contact_Method">Llamada Telefónica</label>
+                    <input type="radio" id="Contact_Method" value="Email" name="Contact_Method"/>
+                    <label id="WhiteLabel" for="Contact_Method">E-mail</label>
+                    <input type="radio" id="Contact_Method" value="Mensaje_Texto" name="Contact_Method"/>
+                    <label id="WhiteLabel" for="Contact_Method">Mensaje de Texto</label>
+                </div>
+                <div class="mb-3">
+                    <label for="TextArea" class="form-label"  id="WhiteLabel">SU MENSAJE</label>
+                    <textarea class="form-control" id="TextArea" rows="5"></textarea>
+                </div>
+                <div style="text-align: center;">
+                    <button type="button" class="btn btn-success" id="Boton_Enviar">ENVIAR</button>
+                </div>
             </div>
         </div>
-    
-    </div> 
+    </div>
 </section>
 
 <!---------------------------------------------------------------->
