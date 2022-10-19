@@ -119,6 +119,32 @@ li {
 /*--               CUERPO DE LA PAGINA (BODY)              */
 /*---------------------------------------------------------*/
 
+.Carrito{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  justify-content: space-around;  
+  color: white;
+  font-weight: bold;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.Carrito a:link{
+  text-decoration: none;
+  font-weight: bold;
+  color:  rgb(147, 90, 5);
+}
+
+.Carrito a:visited{
+  color: rgb(147, 90, 5);
+}
+
+.Carrito a:hover{
+    color: navajowhite;
+    text-decoration: underline;
+}
+
 /*---------------------------------------------------------*/
 /*                  SOBRE NOSOTROS (BODY)                  */
 /*---------------------------------------------------------*/
@@ -145,13 +171,13 @@ li {
   background-color: black;
   margin: 30px 30%;
   padding: 20px 0;
-  border: rgb(193, 160, 30);
+  border: rgb(147, 90, 5);
   border-style: double;
   border-width: 8px;
 }
 
 .card img{
-  border: rgb(193, 160, 30);
+  border: rgb(147, 90, 5);
   border-radius: 100%;
   border-style: solid;
   border-width: 5px;
@@ -160,7 +186,7 @@ li {
 .containersn {
   padding: 16px 16px;
   background-color: white;
-  border: rgb(193, 160, 30);
+  border: rgb(147, 90, 5);
   border-style: solid;
   border-radius: 20px;
   border-width: 5px;
@@ -241,8 +267,8 @@ text-align: center;
 }
 
 #Boton_Enviar{
-background-color: rgb(193, 160, 30);
-border: rgb(193, 160, 30);
+background-color: rgb(147, 90, 5);
+border:rgb(147, 90, 5);
 width: 50%;
 color: black;
 font-weight: 900;

@@ -3,39 +3,12 @@
 
 /*Display Celular */
 
-
-.quienes h2{
-    padding: 10px 0px 20px 0px;
-}
-
-.descript{
-    width: 80vw;
-    text-align: justify;
-}
-
-.descript p{
-    padding: 10px 0px 10px 0px;
-    font-size: 1.1em;
-}
-
-.descript p a{
-    color: black;
-    font-weight: bold;
-}
-
-.descript p a:hover{
-    text-decoration: underline;
-}
-
-.quienes{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
+.form_container h2{
+    padding: 10px 0px 20px;
 }
 
 .form_supercontainer{
-    margin: 20px 20vw;
+    margin: 20px 20px;
     color: white;
     font-weight: bold;
     display: flex;
@@ -102,6 +75,12 @@
     border: none;
 }
 
+.button_container{
+    display: flex;
+    justify-content: center;
+
+}
+
 .contacto {
     padding-top: 15px;
 }
@@ -144,74 +123,17 @@
         width: 350px;
     }
 
-    .iframe_map {
-        width: 80vw;
-        height: 300px;
-        border: none;
-    }
-    
 }
-
-
-
-
-@media (min-width: 1050px) {
-
-    .itemhidden {
-        height: 20vw;
-    }
-
-    .itemhidden p {
-        font-size: 1.1em;
-    }
-}
-
-
-
 
 
 /*Display PC de escritorio*/
 @media (min-width: 1300px) {
     
-
-    .quienes{
-        font-size: 1.3em;
-    }
-
-    .descript{
-        max-width: 1400px;
-    }
-
-    .form_iframe_container{
-        flex-direction: row;
-        width: 80vw;
-        justify-content: space-around; 
-        max-width: 1400px;
-    }
-
+    .form_supercontainer{
+        margin: 20px 20vw;
+    
     .input {
         font-size: 1em;
-    }
-
-
-    .iframe_map{
-        padding: 0px 20px 0px 20px;
-        width: 40vw;
-        height: 500px;
-        max-width: 800px;
-    }
-
-}
-
-
-
-@media (min-width: 1600px) {
-
-    .itemhidden {
-        height: 13vw;
-    }
-    .itemhidden p {
-        font-size: 1.15em;
     }
 
 }
