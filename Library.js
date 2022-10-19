@@ -5,7 +5,7 @@ function item(imagen,name,descr,prec) {
                         <h3 class="item_name">${name}</h3>
                         <div class="arrow" id="arrow_${name}"><button type="button" 
                             onclick="{document.getElementById('${name}').style.display='grid'; document.getElementById('arrow_${name}').style.display='none'}"
-                            <i class="fa-solid fa-chevron-down"></i></button></i>
+                            <i class="fa-sharp fa-solid fa-circle-arrow-down"></i></button></i>
                         </div>
                     </div>
                     <div class="itemhidden" id="${name}" style="display:none">
@@ -14,7 +14,7 @@ function item(imagen,name,descr,prec) {
                         <div><a class="item_button" href="Carrito.html">Comprar</a></div>
                         <div class="arrow_up" id="arrow_${name}"><button type="button" 
                             onclick="{document.getElementById('${name}').style.display='none'; document.getElementById('arrow_${name}').style.display='grid'}"
-                            <i class="fa-solid fa-chevron-up"></i></button></i>
+                            <i class="fa-sharp fa-solid fa-circle-arrow-up"></i></button></i>
                         </div>
                     </div>
                 </div>`
