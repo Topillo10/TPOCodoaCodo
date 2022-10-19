@@ -7,7 +7,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>TIENDA DE CAFÉ</title>
+    
 
 <!---------------------------------------------------------------->
 <!--                  LINKS EXTERNOS (HEAD)                     -->
@@ -15,7 +17,13 @@
 
 <!--ARCHIVO CSS-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_productos.css">
+
+<!--ARCHIVO JS-->
+    <script src="https://kit.fontawesome.com/f56b239c28.js" crossorigin="anonymous"></script>
+    <script src="Library.js"></script>
 </head>
+
 
 <!---------------------------------------------------------------->
 <!--                          BODY                              -->
@@ -27,7 +35,7 @@
 <!--                      HEADER (BODY)                         -->
 <!---------------------------------------------------------------->
     <header>  
-        <h1 class="Titulo">TIENDA DE CAFÉ</h1>
+        <img src="Media/Logo.PNG" id="Logo" alt="Logo" style="width:352px">
 
 <!---------------------------------------------------------------->
 <!--                  NAVBAR (HEADER - BODY)                    -->
@@ -49,9 +57,87 @@
 <!--                CUERPO DE LA PAGINA (BODY)                  -->
 <!---------------------------------------------------------------->
     
-<section>
-    <div>A</div>
-</section>
+<main class="Productos">
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Arabica">Arábica</a></h2>
+        <div class="prod_container">
+            
+            <!-- La función "item" toma 4 valores (ruta de la imagen, nombre, descripción y precio) 
+            la función escribe el html con esos datos de los distintos productos.
+            la función "item" está declarada en Library.js-->
+
+            <script>                    
+                item("img/Productos/Typica.fondo.png",
+                    "Typica",
+                    "Se cultiva en Jamaica, América Central y Asia y es una variedad de alta calidad con acidez limpia y dulce.",
+                    "$4500")
+
+                item("img/Productos/Bourbon.fondo.png",
+                    "Bourbon",
+                    "Se conoce por tener un sabor mucho más intenso donde se distinguen aromas a frutos del bosque con un toque ácido.",
+                    "$4000")  
+                
+                item("img/Productos/Gesha.fondo.png",
+                    "Gesha",
+                    "Es famoso por tener un buen cuerpo. Del mismo modo, su sabor tiene un toque achocolatado con un tono a madera añeja.",
+                    "$3700") 
+                    
+                
+
+            </script>                
+        </div>
+        <div class="espaciador"></div>                
+
+    </section>
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Robusta">Robusta</a></h2>
+        <div class="prod_container">
+            <script>
+                item("img/Productos/Conilón-fondo.png",
+                    "Conilón",
+                    "Cuenta con un aroma dulce con notas florales y cítricas.",
+                    "$4800")  
+
+                item("img/Productos/Uganda-fondo.png",
+                    "Uganda",
+                    "Se le conoce por tener un tono ácido y amargo, y a su vez, desprende un sabor caramelizado con tintes de pan tostado.",
+                    "$3450")  
+
+                item("img/Productos/Niauoli-fondo.png",
+                    "Niaouli",
+                    "Es considerado un grano de cuerpo medio y alta acidez con un aroma que desprende cierto aire afrutado.",
+                    "$4250")  
+
+            </script>                                        
+        </div>
+        <div class="espaciador"></div>                
+            
+    </section>
+    <section class="cafeTipos">
+        <h2 class="Tipos"><a name="Liberica">Libérica</a></h2>
+        <div class="prod_container">
+            <script>
+                item("img/Productos/Ivorensis-fondo.png",
+                    "Ivorensis",
+                    "Su sabor es denso y dulce. Además, se pueden distinguir aromas con tonos frutales y silvestres.",
+                    "$3570")  
+
+                item("img/Productos/Liberensis-fondo.png",
+                    "Liberensis",
+                    "Es muy apreciado por su bien cuerpo y por su acidez equilibrada.",
+                    "$4000")  
+
+                item("img/Productos/Indeniensis-fondo.png",
+                    "Indeniensis",
+                    "Tiene un aroma intenso y muy agradable con una tenue acidez.",
+                    "$3800")  
+
+            </script>            
+        </div>
+        <div class="espaciador"></div> 
+    </section>
+
+</main>
 
 <!---------------------------------------------------------------->
 <!--                     FOOTER (BODY)                          -->
