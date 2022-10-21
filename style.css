@@ -119,6 +119,7 @@ li {
 /*--               CUERPO DE LA PAGINA (BODY)              */
 /*---------------------------------------------------------*/
 
+
 .Carrito{
   display: flex;
   flex-direction: column;
@@ -143,6 +144,57 @@ li {
 .Carrito a:hover{
     color: navajowhite;
     text-decoration: underline;
+}
+
+audio {
+  display: none;
+}
+
+.heroContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 30px 0px;
+}
+
+.hero{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero video{
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+}
+
+.heroText{
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.heroText p{
+  color: white;
+  font-size: 3em;
+  animation-name: fading;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
+
+}
+
+@keyframes fading {
+  from{color: rgba(255,255,255,0)}
+  to {color: rgba(255,255,255,1)}
 }
 
 /*---------------------------------------------------------*/
@@ -278,11 +330,16 @@ font-weight: 900;
 /*                       FOOTER (BODY)                     */
 /*---------------------------------------------------------*/   
 
-.Pie_de_Pagina {
+
+
+.Pie_de_Pagina{
     background-color: rgba(0, 0, 0, 0.8);
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding: 3rem 1.5rem 1.5rem;
     line-height: 1.428;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 footer .link{
@@ -301,3 +358,50 @@ footer p {
     margin: 1rem;
     color: white;
 }
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+  font-size: 2em;
+
+}
+
+.footerContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes a:hover{
+  color: rgb(147, 90, 5);
+}
+
+.redes a{
+  text-decoration: none;
+  color: white;
+}
+
+iframe{
+  width: 35vw;
+  height: 15vw;
+}  
+
+@media (min-width: 640px) {
+  
+    .hero{
+      height: 25vw;
+    }
+    
+    
+    .Pie_de_Pagina{
+      flex-direction: row;
+    }
+
+    .iframe{
+      width: 80vw;
+      height: auto;
+    }
+  }
+
