@@ -61,7 +61,7 @@
     border: none;
 }
 
-.input_button:visited{jm
+.input_button:visited{
     color:rgb(147, 90, 5)
 }
 
@@ -131,7 +131,7 @@
     
     .form_supercontainer{
         margin: 20px 20vw;
-    
+    }
     .input {
         font-size: 1em;
     }
